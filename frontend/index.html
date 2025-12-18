@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Vehicle Matching System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🚗 AI Vehicle Matching System</h1>
+
+    <form id="rideForm">
+        <label>Pickup Latitude</label>
+        <input type="number" step="any" id="pickup_lat" required>
+
+        <label>Pickup Longitude</label>
+        <input type="number" step="any" id="pickup_lng" required>
+
+        <label>Drop Latitude</label>
+        <input type="number" step="any" id="drop_lat" required>
+
+        <label>Drop Longitude</label>
+        <input type="number" step="any" id="drop_lng" required>
+
+        <label>Traffic Level</label>
+        <select id="traffic_level">
+            <option value="1">Low</option>
+            <option value="2">Medium</option>
+            <option value="3">High</option>
+        </select>
+
+        <button type="submit">Get Ride Quote</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
